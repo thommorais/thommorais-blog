@@ -95,7 +95,7 @@ const Resume = () => {
 							aria-label='Print contact information'
 						>
 							<a className='underline hover:text-foreground/70' href={resumeData.personalWebsite}>
-								{resumeData.personalWebsite.replace('http://', '').replace('?ref=selfso', '')}
+								{resumeData.personalWebsite}
 							</a>
 							<span aria-hidden='true'>/</span>
 							<a

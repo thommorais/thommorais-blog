@@ -48,9 +48,9 @@ const resumeData: ResumeData = {
 	location: 'São Francisco do Sul, Santa Catarina, Brasil, UTC-3',
 	about:
 		'Brazilian developer who builds fast, SEO-optimized, and accessible web applications. Experienced with the React ecosystem, Next.js, and React Native. Proficient in end-to-end development, handling both frontend and backend layers. Currently learning Three.js and GLSL to implement 3D graphics on websites.',
-	personalWebsite: 'http://thommorais.me?ref=selfso',
+	personalWebsite: 'http://thommorais.me',
 	email: 'thommorais@gmail.com',
-	linkedin: 'https://linkedin.com/in/thom-morais?ref=selfso',
+	linkedin: 'https://linkedin.com/in/thom-morais',
 	skills: [],
 	education: [
 		{

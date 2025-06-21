@@ -1,5 +1,5 @@
 import { ContactLink } from "_/components/resume/contact-link"
-import { GithubIcon, GlobeIcon, LinkedInIcon, MailIcon } from "_/components/resume/social-links"
+import { GithubIcon, LinkedInIcon, MailIcon } from "_/components/resume/social-links"
 import { resumeData } from "_/data/repository/resume"
 
 function ArrowIcon() {
@@ -19,9 +19,6 @@ export default function Footer() {
 		<footer className="my-8">
 			<div className='max-w-md space-y-4'>
 				<div className='flex gap-x-3 text-sm print:hidden' aria-label='Contact links'>
-					<ContactLink href={resumeData.personalWebsite} ariaLabel='Personal website'>
-						<GlobeIcon />
-					</ContactLink>
 					<ContactLink href={`mailto:${resumeData.email}`} ariaLabel='Email'>
 						<MailIcon />
 					</ContactLink>
@@ -42,7 +39,7 @@ export default function Footer() {
 					aria-label='Print contact information'
 				>
 					<a className='underline hover:text-foreground/70' href={resumeData.personalWebsite}>
-						{resumeData.personalWebsite.replace('http://', '').replace('?ref=selfso', '')}
+						{resumeData.personalWebsite}
 					</a>
 					<span aria-hidden='true'>/</span>
 					<a
