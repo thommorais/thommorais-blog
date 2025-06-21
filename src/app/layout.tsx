@@ -53,7 +53,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en' className={cx()}>
-			<body className='mx-4 max-w-xl text-text/75 antialiased lg:mx-auto print:space-y-4'>
+			<body className='mx-4 text-text/75 antialiased md:max-w-xl lg:mx-auto print:space-y-4'>
 				<main className='grid min-h-dvh grid-rows-[auto_1fr_auto] px-2 md:px-0 '>
 					<Navbar />
 					{children}

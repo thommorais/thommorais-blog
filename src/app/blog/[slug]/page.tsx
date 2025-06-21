@@ -56,7 +56,7 @@ export default async function Blog({ params }: PageProps) {
 	}
 
 	return (
-		<section>
+		<>
 			<script
 				type='application/ld+json'
 				suppressHydrationWarning
@@ -89,6 +89,6 @@ export default async function Blog({ params }: PageProps) {
 			<article className='prose'>
 				<CustomMDX source={post.content} />
 			</article>
-		</section>
+		</>
 	)
 }

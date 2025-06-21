@@ -41,10 +41,9 @@ interface LinkProps {
 }
 
 function CustomLink(props: LinkProps) {
-
 	if (props.href.startsWith('/')) {
 		return (
-			<Link {...props} href={props.href} >
+			<Link {...props} href={props.href}>
 				{props.children}
 			</Link>
 		)
