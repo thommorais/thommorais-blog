@@ -12,6 +12,10 @@
 	--surface: oklch(0.99 0.0161 95.22);
 	--text: oklch(0.17 0.0017 17.32);
 	--mutted: oklch(0.54 0.0078 97.45);
+
+	--content-max-width: var(--breakpoint-xl);
+	--breakout-max-width: var(--breakpoint-2xl);
+	--shared-transition: 0.4s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -128,7 +132,7 @@ html {
 }
 
 .prose p {
-	@apply my-4 text-neutral-800 dark:text-neutral-200;
+	@apply my-4;
 }
 
 .prose h1 {

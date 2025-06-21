@@ -82,7 +82,7 @@ export default async function Blog({ params }: PageProps) {
 			/>
 			<h1 className='title font-semibold text-2xl tracking-tighter'>{post.metadata.title}</h1>
 			<div className='mt-2 mb-8 flex items-center justify-between text-sm'>
-				<p className='text-neutral-600 text-sm dark:text-neutral-400'>
+				<p className='text-neutral-600 dark:text-neutral-400'>
 					{formatDate(post.metadata.publishedAt)}
 				</p>
 			</div>

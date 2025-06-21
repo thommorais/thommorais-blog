@@ -1,3 +1,7 @@
+import { ContactLink } from "_/components/resume/contact-link"
+import { GithubIcon, GlobeIcon, LinkedInIcon, MailIcon } from "_/components/resume/social-links"
+import { resumeData } from "_/data/repository/resume"
+
 function ArrowIcon() {
 	return (
 		<svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -12,34 +16,50 @@ function ArrowIcon() {
 
 export default function Footer() {
 	return (
-		<footer className="mb-16">
-			<ul className='mt-8 flex flex-col space-x-0 space-y-2 font-sm text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300'>
-				{/* <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
-          </a>
-        </li> */}
-				<li>
+		<footer className="my-8">
+			<div className='max-w-md space-y-4'>
+				<div className='flex gap-x-3 text-sm print:hidden' aria-label='Contact links'>
+					<ContactLink href={resumeData.personalWebsite} ariaLabel='Personal website'>
+						<GlobeIcon />
+					</ContactLink>
+					<ContactLink href={`mailto:${resumeData.email}`} ariaLabel='Email'>
+						<MailIcon />
+					</ContactLink>
+					<ContactLink href={resumeData.linkedin} ariaLabel='LinkedIn'>
+						<LinkedInIcon />
+					</ContactLink>
 					<a
 						className='flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100'
 						rel='noopener noreferrer'
 						target='_blank'
 						href='https://github.com/thommorais'
 					>
-						<ArrowIcon />
-						<p className='ml-2 h-7'>github</p>
+						<GithubIcon />
 					</a>
-				</li>
-			</ul>
-			{/* <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
-      </p> */}
+				</div>
+				<div
+					className='hidden gap-x-2 text-md print:flex print:text-xs'
+					aria-label='Print contact information'
+				>
+					<a className='underline hover:text-foreground/70' href={resumeData.personalWebsite}>
+						{resumeData.personalWebsite.replace('http://', '').replace('?ref=selfso', '')}
+					</a>
+					<span aria-hidden='true'>/</span>
+					<a
+						className='underline hover:text-foreground/70'
+						href={`mailto:${resumeData.email}`}
+					>
+						{resumeData.email}
+					</a>
+					<span aria-hidden='true'>/</span>
+					<a
+						className='underline hover:text-foreground/70'
+						href='https://github.com/thommorais'
+					>
+						github
+					</a>
+				</div>
+			</div>
 		</footer>
 	)
 }

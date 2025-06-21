@@ -39,7 +39,11 @@ export const metadata: Metadata = {
 }
 
 const cx = tv({
-	base: ['bg-surface text-black dark:text-white', GeistSans.variable, GeistMono.variable],
+	base: [
+		'scroll-smooth bg-surface text-black antialiased dark:text-white',
+		GeistSans.variable,
+		GeistMono.variable,
+	],
 })
 
 export default function RootLayout({
@@ -49,8 +53,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en' className={cx()}>
-			<body className='mx-4 mt-8 max-w-xl antialiased lg:mx-auto'>
-				<main className='mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0'>
+			<body className='mx-4 max-w-xl text-text/75 antialiased lg:mx-auto print:space-y-4'>
+				<main className='grid min-h-dvh grid-rows-[auto_1fr_auto] px-2 md:px-0 '>
 					<Navbar />
 					{children}
 					<Footer />
