@@ -1,5 +1,4 @@
-onlyBuiltDependencies:
-  - '@biomejs/biome'
-  - '@tailwindcss/oxide'
-  - '@vercel/speed-insights'
-  - sharp
+packages: []
+
+allowBuilds:
+  sharp: false
