@@ -44,14 +44,30 @@ interface ResumeData {
 const resumeData: ResumeData = {
 	name: 'Thom Morais',
 	summary:
-		'Developer with experience in performance optimization, SEO, and accessibility. Creates effective user experiences using React and technical planning. Skilled in building applications end-to-end across frontend and backend.',
-	location: 'São Francisco do Sul, Santa Catarina, Brasil, UTC-3',
+		'Frontend engineer focused on performance, SEO, and accessibility. Works in React across the whole stack, from interface design through to the backend.',
+	location: 'Santa Catarina, Brasil, UTC-3',
 	about:
-		'Brazilian developer who builds fast, SEO-optimized, and accessible web applications. Experienced with the React ecosystem, Next.js, and React Native. Proficient in end-to-end development, handling both frontend and backend layers. Currently learning Three.js and GLSL to implement 3D graphics on websites.',
+		'Brazilian developer. I build web applications that load fast, rank well, and work for everyone. Most of my work is in React, Next.js, and React Native, and I handle the backend when a project needs it. I also design, and I use Three.js and GLSL for 3D on the web.',
 	personalWebsite: 'http://thommorais.me',
 	email: 'thommorais@gmail.com',
 	linkedin: 'https://linkedin.com/in/thom-morais',
-	skills: [],
+	skills: [
+		{ name: 'React' },
+		{ name: 'Next.js' },
+		{ name: 'React Native' },
+		{ name: 'TypeScript' },
+		{ name: 'JavaScript' },
+		{ name: 'Node.js' },
+		{ name: 'HTML' },
+		{ name: 'CSS' },
+		{ name: 'Performance Optimization' },
+		{ name: 'Accessibility' },
+		{ name: 'SEO' },
+		{ name: 'Responsive Design' },
+		{ name: 'UI/UX Design' },
+		{ name: 'Three.js' },
+		{ name: 'GLSL' },
+	],
 	education: [
 		{
 			degree: "Bachelor's Degree in Software Engineering",
@@ -71,14 +87,14 @@ const resumeData: ResumeData = {
 			degree: 'Three.js Journey',
 			institution: 'Bruno Simon',
 			location: 'Online',
-			startDate: 'October 2021',
-			endDate: 'December 2021',
+			startDate: 'Oct 2021',
+			endDate: 'Dec 2021',
 		},
 		{
 			degree: '3D Modeling',
 			institution: 'EBAC',
 			location: 'Online',
-			startDate: 'March 2022',
+			startDate: 'Mar 2022',
 			endDate: 'Present',
 		},
 	],
@@ -94,14 +110,24 @@ const resumeData: ResumeData = {
 	],
 	workExperience: [
 		{
+			title: 'Senior Frontend Engineer',
+			location: 'Remote',
+			company: 'Welligence',
+			employmentType: 'full-time',
+			startDate: 'Jun 2025',
+			endDate: 'Present',
+			description:
+				'Build and maintain the interface for an energy analytics platform. Most of my time goes to the frontend, and I take on design work as well.',
+		},
+		{
 			title: 'Technical Lead',
 			location: 'Porto Alegre, RS, Brazil',
 			company: 'fuerza studio',
 			employmentType: 'full-time',
 			startDate: 'May 2023',
-			endDate: 'Present',
+			endDate: 'May 2025',
 			description:
-				'Managed technical planning and architecture for web and mobile applications. Trained junior developers, established coding standards, and worked with multiple teams to deliver user experiences that met client requirements.',
+				'Led technical planning and architecture for web and mobile projects. Mentored junior developers, set the coding standards the team worked to, and coordinated across teams on client delivery.',
 		},
 		{
 			title: 'Frontend Developer',
@@ -111,17 +137,17 @@ const resumeData: ResumeData = {
 			startDate: 'Jun 2016',
 			endDate: 'Apr 2023',
 			description:
-				'Built React applications with improved performance and user engagement metrics. Reduced load times through optimization techniques while implementing accessibility standards and responsive designs.',
+				'Built React applications for client projects, with a focus on load times, accessibility, and getting layouts right across screen sizes.',
 		},
 		{
 			title: 'Frontend Developer',
-			location: 'Porto Alegre, RS, Brazil',
+			location: 'Remote',
 			company: 'sporty',
 			employmentType: 'part-time',
 			startDate: 'Jan 2019',
 			endDate: 'May 2020',
 			description:
-				'Created UI/UX solutions that increased user engagement. Worked with design team to build interfaces that combined visual quality with technical performance.',
+				'Part-time, alongside my job at fuerza studio. Designed and built interfaces with the design team, keeping them fast without losing the look.',
 		},
 		{
 			title: 'UI/UX Designer / Developer',
@@ -131,7 +157,7 @@ const resumeData: ResumeData = {
 			startDate: 'Jan 2016',
 			endDate: 'Jun 2016',
 			description:
-				'Designed user interfaces that increased client conversion rates. Aligned designs with marketing goals to improve brand engagement and technical implementation.',
+				'Designed and built interfaces for marketing campaigns, working to campaign goals and brand guidelines.',
 		},
 		{
 			title: 'UI/UX Designer / Developer',
@@ -141,7 +167,7 @@ const resumeData: ResumeData = {
 			startDate: 'Feb 2015',
 			endDate: 'Jan 2016',
 			description:
-				'Built effective interfaces for clients, combining design with technical functionality. Maintained brand consistency and improved usability on web and mobile platforms.',
+				'Built client interfaces, doing both the design and the implementation. Kept brand consistency across web and mobile.',
 		},
 		{
 			title: 'Frontend Developer',
@@ -151,7 +177,7 @@ const resumeData: ResumeData = {
 			startDate: 'May 2014',
 			endDate: 'Feb 2015',
 			description:
-				'Developed frontend solutions that reduced bounce rates. Collaborated with development team to build optimized code and functional user experiences.',
+				'Frontend work as part of a small development team.',
 		},
 		{
 			title: 'Frontend Developer',
@@ -161,7 +187,7 @@ const resumeData: ResumeData = {
 			startDate: 'Nov 2011',
 			endDate: 'May 2014',
 			description:
-				'Built responsive web solutions for clients, resulting in improved mobile engagement. Developed interfaces for complex applications with cross-browser compatibility.',
+				'Built responsive websites for clients, including interfaces for larger applications that had to work across browsers.',
 		},
 	],
 }

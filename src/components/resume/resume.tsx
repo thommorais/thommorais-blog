@@ -7,19 +7,22 @@ import { resumeData } from '_/data/repository/resume'
 const Resume = () => {
 	return (
 		<section
-			className='mx-auto my-8 w-full max-w-2xl space-y-8 px-4 text-text/75 print:space-y-4'
+			className='mx-auto mt-0 mb-8 w-full max-w-2xl space-y-8 px-4 text-text/75 print:space-y-4'
 			aria-label='Resume Content'
 		>
 			<div className='flex flex-col gap-6'>
 				<section className='flex min-h-0 flex-col gap-y-3 print:gap-y-1'>
-					<div className='text-pretty leading-7 print:text-xs' aria-labelledby='about-section'>
+					<div
+						className='text-pretty text-lg leading-8 print:text-xs'
+						aria-labelledby='about-section'
+					>
 						{resumeData.about}
 					</div>
 				</section>
 
 				{/* Work Experience Section */}
 				<section className='mt-4 flex min-h-0 flex-col gap-y-3 print:gap-y-1'>
-					<h2 className='font-bold text-lg' id='work-experience'>
+					<h2 className='font-bold text-xl' id='work-experience'>
 						Work Experience
 					</h2>
 					<div className='flex flex-col gap-8' role='feed' aria-labelledby='work-experience'>
@@ -31,15 +34,15 @@ const Resume = () => {
 
 				{/* Education Section */}
 				<section className='mt-4 flex min-h-0 flex-col gap-y-3 print:gap-y-1'>
-					<h2 className='font-bold text-lg' id='education-section'>
+					<h2 className='font-bold text-xl' id='education-section'>
 						Education
 					</h2>
 					<div className='flex flex-col gap-4' role='feed' aria-labelledby='education-section'>
 						{resumeData.education.map(edu => (
 							<div key={edu.degree} className='flex flex-col gap-1'>
-								<h3 className='font-medium text-md'>{edu.degree}</h3>
-								<p className='text-sm'>
-									{edu.institution}, {edu.location} — {edu.startDate} - {edu.endDate}
+								<h3 className='font-medium text-lg'>{edu.degree}</h3>
+								<p className='text-base'>
+									{edu.institution}, {edu.location} ({edu.startDate} - {edu.endDate})
 								</p>
 							</div>
 						))}
@@ -48,12 +51,12 @@ const Resume = () => {
 
 				{/* Languages Section */}
 				<section className='mt-4 flex min-h-0 flex-col gap-y-3 print:gap-y-1'>
-					<h2 className='font-bold text-lg' id='languages-section'>
+					<h2 className='font-bold text-xl' id='languages-section'>
 						Languages
 					</h2>
 					<div className='flex flex-col gap-1' role='feed' aria-labelledby='languages-section'>
 						{resumeData.languages.map(lang => (
-							<p key={lang.name} className='text-sm'>
+							<p key={lang.name} className='text-base'>
 								{lang.name} ({lang.proficiency})
 							</p>
 						))}
@@ -62,7 +65,7 @@ const Resume = () => {
 
 				{resumeData.skills.length ? (
 					<section className='flex min-h-0 flex-col gap-y-3 print:gap-y-1'>
-						<h2 className='font-bold text-lg' id='skills-section'>
+						<h2 className='font-bold text-xl' id='skills-section'>
 							Technical Skills
 						</h2>
 						<ul
@@ -79,7 +82,7 @@ const Resume = () => {
 
 				<section className='mt-5 w-full items-center justify-between md:flex'>
 					<div className='max-w-md space-y-4'>
-						<div className='flex gap-x-3 text-sm print:hidden' aria-label='Contact links'>
+						<div className='flex gap-x-3 text-base print:hidden' aria-label='Contact links'>
 							<ContactLink href={resumeData.personalWebsite} ariaLabel='Personal website'>
 								<GlobeIcon />
 							</ContactLink>
@@ -107,7 +110,7 @@ const Resume = () => {
 							<span aria-hidden='true'>/</span>
 						</div>
 					</div>
-					<p className='items-center text-pretty font-mono text-foreground text-xs'>
+					<p className='items-center text-pretty font-mono text-foreground text-sm'>
 						{resumeData.location}
 					</p>
 				</section>

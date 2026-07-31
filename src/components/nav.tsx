@@ -7,8 +7,8 @@ const navItems = {
 }
 
 export function Navbar() {
-	return (<header className='py-5'>
-		<aside className='mb-16 tracking-tight'>
+	return (<header className='pt-16 pb-0 print:pt-8'>
+		<aside className='mb-4 tracking-tight'>
 			<div className='flex items-center justify-between lg:sticky lg:top-20'>
 				<Link href='/' className='relative flex shrink-0' aria-hidden='true'>
 					<svg width='118' height='72' viewBox='0 0 118 72' fill='none'>
@@ -20,7 +20,7 @@ export function Navbar() {
 						/>
 					</svg>
 				</Link>
-				<nav
+				{/* <nav
 					className='fade relative flex scroll-pr-6 flex-row items-start px-0 pb-0 md:relative md:overflow-auto print:hidden'
 					id='nav'
 				>
@@ -35,7 +35,7 @@ export function Navbar() {
 							</Link>
 						)
 					})}
-				</nav>
+				</nav> */}
 			</div>
 		</aside>
 	</header>
